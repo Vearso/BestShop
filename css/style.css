@@ -105,7 +105,7 @@ body {
 .statistics .container {
     font-family: Raleway,sans-serif;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 101px;
 }
 .box__circle {
@@ -170,9 +170,360 @@ body {
     width: 1124px;
     height: 370px;
     background-color: #FFFFFF;
+    padding: 36px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 5px;
+
+}
+.rectangle {
+    width: 200px;
+    height: 200px;
+    border-radius: 41px;
+    margin: 38px 71px;
+    transform: rotate( 45deg );
+    background-color: var(--secondaryColor);
+}
+.article__image--laptop {
+    width: 390px;
+    height: 219px;
+    background-image: url("../assets/Macbook.png");
+    background-size: contain;
+    position: absolute;
+    top:113px;
+    left:620px;
+}
+.article__content{
+    width: 416px;
+    height: 188px;
+    margin-top: 55px;
+}
+.article__content::after {
+    margin-top: 50px;
+    content: "";
+    width: 330px;
+    position: absolute;
+    border-bottom: 4px solid var(--secondaryColor);
+}
+.article__title {
+    font-family: Raleway,sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+}
+.article__text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 30px;
+}
+.circle {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-color: var(--primaryColor);
+}
+.article__image--phone {
+    width: 426px;
+    height: 328px;
+    background-image: url("../assets/iPhone.png");
+    background-size: contain;
+    position: absolute;
+    top: 29px;
+    left: 70px;
+}
+.article__content--secondary::after{
+    border-color: var(--primaryColor);
+}
+.article__container--small {
+    margin:0;
+    width: 623px;
+    height: 370px;
+    background-color: #FFFFFF;
+    padding: 36px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 5px;
+}
+.article__container--third {
+    width: 1124px;
+    margin: 25px auto;
     display: flex;
     justify-content: space-between;
 }
-.rectangle {
-    
+.square {
+    width: 440px;
+    height: 370px;
+    margin-left: 51px;
+    background-color: var(--thirdColor);
+    position: relative;
+
+}
+.article__image--trumpet {
+    width: 296px;
+    height: 208px;
+    background-image: url("../assets/Trumpet.png");
+    background-size: contain;
+    position: absolute;
+    top: 91px;
+    left: 62px;
+}
+.article__content--third::after{
+    border-color: var(--thirdColor);
+}
+.pricing {
+    height: 871px;
+}
+.price__container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 372px;
+    height: 461px;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 18px;
+    text-align: center;
+    position: relative;
+    margin: 0 30px;
+}
+.box__title {
+    font-family: Raleway,sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    margin: 34px auto;
+    font-weight: bold;
+}
+.price {
+    font-size: 46px;
+    color: var(--secondaryColor);
+}
+.box ul {
+    margin-top: 49px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box>ul li {
+    font-size: 14px;
+    line-height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box>ul li::before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    padding-right: 10px;
+    background-image: url("../assets/Ckechmark-1.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.box__btn {
+    padding: 16px 57px;
+    border-radius: 23px;
+    background-color: var(--secondaryColor);
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    position: absolute;
+    bottom: -25px;
+    left: 111px;
+}
+
+.box--primary {
+    width: 405px;
+    height: 500px;
+    border-color: var(--primaryColor);
+    box-shadow: 5px 10px 27px #07ACE629;;
+}
+.box__btn--primary {
+    background-color: var(--primaryColor);
+    left: 120px;
+    padding: 16px 65px;
+}
+.price__primary {
+    color: var(--primaryColor);
+}
+.box--third {
+    border-color: var(--thirdColor);
+}
+.box__btn--third {
+    background-color: var(--thirdColor);
+}
+.price__third {
+    color: var(--thirdColor);
+}
+.limited-offer {
+    margin-top: 10px;
+    font-family: Raleway,sans-serif;
+    font-size: 12px;
+    color: #13253B;
+}
+.box--primary li:last-child::before {
+    background-image: url("../assets/Close.svg");
+}
+.box--secondary li:nth-child(4)::before{
+    background-image: url("../assets/Close.svg");
+}
+.box--secondary li:last-child::before{
+    background-image: url("../assets/Close.svg");
+}
+.contact {
+    height: 435px;
+}
+.contact .container {
+    width: 896px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.contact__media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact__title {
+    font-family: Raleway,sans-serif;
+    font-size: 49px;
+    line-height: 57px;
+}
+.contact__text {
+    padding: 22px 0;
+    margin-bottom: 18px;
+}
+.email {
+    font-weight: 500;
+    color: #A5A5A5;
+}
+.email-icon {
+    width: 27px;
+    height: 27px;
+    background-image: url("../assets/Mail Icon.svg");
+}
+.phone {
+    font-weight: 500;
+    color: #A5A5A5;
+}
+.phone-icon {
+    width: 27px;
+    height: 27px;
+    background-image: url("../assets/Phone Icon.svg");
+}
+.contact__form {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+}
+.contact__form .form__text {
+    color: var(--primaryColor);
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+.contact__form > label [type="text"] {
+    border: 0;
+    border-bottom: 1px solid #A5A5A5;
+    width: 440px;
+    height: 42px;
+}
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+}
+
+.checkbox span {
+    height: 24px;
+    width: 24px;
+    margin-top: 11px;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+    flex-shrink: 0;
+    flex-basis: 22px;
+    cursor: pointer;
+
+}
+.checkbox p {
+    font-size: 12px;
+    line-height: 17px;
+    color: #B2B2B2;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+.checkbox input:checked + span {
+    background-image: url("../assets/Checkmark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+button {
+    opacity: 100;
+    align-self: flex-end;
+    border-radius: 40px;
+    border: none;
+}
+.form__btn {
+    padding: 20px 97px;
+    color: white;
+    background-color: var(--primaryColor);
+    border-radius: 35px;
+    box-shadow: 5px 10px 14px #07ACE629;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 18px;
+}
+.page__footer {
+    height: 89px;
+    background-color: #F7F7F7;
+    box-shadow: 0px -5px 40px #00000029;
+}
+
+.page__footer .container {
+    height: 89px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facebook {
+    width: 24px;
+    height: 24px;
+
+}
+.twitter {
+    width: 24px;
+    height: 24px;
+}
+.copyright {
+    font-size: 11px;
+    margin: 0 auto;
+    width: 1352px;
+    color: #A5A5A5;
+}
+.page__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
