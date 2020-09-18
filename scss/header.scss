@@ -43,3 +43,15 @@
     border-top: 5px solid $primaryColor;
   }
 }
+.page__nav--cross {
+  display: none;
+  width: 35px;
+  height: 35px;
+  background-image: url("../assets/cross.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  color: $primaryColor;
+}

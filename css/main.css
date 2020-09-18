@@ -66,6 +66,19 @@ body {
   border-top: 5px solid #08A6E4;
 }
 
+.page__nav--cross {
+  display: none;
+  width: 35px;
+  height: 35px;
+  background-image: url("../assets/cross.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  color: #08A6E4;
+}
+
 .page__banner {
   height: calc(100vh - 70px);
   background-image: url("../assets/Background.png");
@@ -731,7 +744,15 @@ button {
   }
 
   .page__nav--burger.show {
-    display: none;
+    width: 30px;
+    height: 30px;
+    background-image: url("../assets/cross.svg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .page__nav--burger.show span {
+    border: none;
   }
 
   .price__container {
