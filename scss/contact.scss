@@ -1,0 +1,113 @@
+.contact {
+  min-height: 435px;
+}
+.contact .container {
+  max-width: 896px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.contact__media {
+  display: flex;
+  align-items: center;
+}
+.contact__title {
+  font-family: Raleway,sans-serif;
+  font-size: 49px;
+  line-height: 57px;
+}
+.contact__text {
+  padding: 22px 0;
+  margin-bottom: 18px;
+}
+.email {
+  font-weight: 500;
+  color: #A5A5A5;
+}
+.email-icon {
+  width: 27px;
+  height: 27px;
+  background-image: url("../assets/Mail Icon.svg");
+}
+.phone {
+  font-weight: 500;
+  color: #A5A5A5;
+}
+.phone-icon {
+  width: 27px;
+  height: 27px;
+  margin-left: 20px;
+  background-image: url("../assets/Phone Icon.svg");
+}
+.contact__form {
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+}
+.contact__form .form__text {
+  color: $primaryColor;
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+.contact__form > label [type="text"] {
+  border: 0;
+  border-bottom: 1px solid #A5A5A5;
+  max-width: 440px;
+  height: 42px;
+}
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 24px;
+}
+.checkbox span {
+  height: 24px;
+  width: 24px;
+  margin-top: 11px;
+  border: 1px solid #95989A;
+  border-radius: 4px;
+  flex-shrink: 0;
+  flex-basis: 22px;
+  cursor: pointer;
+
+}
+.checkbox p {
+  font-size: 12px;
+  line-height: 17px;
+  color: #B2B2B2;
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+.checkbox input:checked + span {
+  background-image: url("../assets/Checkmark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+button {
+  opacity: 100;
+  align-self: flex-end;
+  border-radius: 40px;
+  border: none;
+}
+.form__btn {
+  padding: 20px 97px;
+  color: white;
+  background-color: $primaryColor;
+  border-radius: 35px;
+  box-shadow: 5px 10px 14px #07ACE629;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 18px;
+}

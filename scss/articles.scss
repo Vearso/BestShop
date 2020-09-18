@@ -1,0 +1,115 @@
+.articles {
+  min-height: 1395px;
+  background-color: #F7F7F7;
+  padding-top: 106px;
+  padding-bottom: 30px;
+  .container {
+    max-width: 100%;
+  }
+}
+.article__container {
+  margin: 25px auto;
+  max-width: 1124px;
+  min-height: 370px;
+  background-color: #FFFFFF;
+  padding: 36px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 5px;
+
+}
+.rectangle {
+  width:  200px;
+  height: 200px;
+  border-radius: 41px;
+  margin: 38px 71px;
+  transform: rotate( 45deg );
+  background-color: $secondaryColor;
+}
+.article__image--laptop {
+  width: 390px;
+  height: 219px;
+  background-image: url("../assets/Macbook.png");
+  background-size: contain;
+  position: absolute;
+  top: 113px;
+  left: 620px;
+}
+.article__content{
+  max-width: 416px;
+  height: 188px;
+  margin-top: 55px;
+}
+.article__content::after {
+  margin-top: 50px;
+  content: "";
+  width: 330px;
+  position: absolute;
+  border-bottom: 4px solid $secondaryColor;
+}
+
+.article__title {
+  font-family: Raleway,sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+}
+.article__text {
+  line-height: 22px;
+  margin-top: 30px;
+}
+.circle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background-color: $primaryColor;
+}
+.article__image--phone {
+  width: 426px;
+  height: 328px;
+  background-image: url("../assets/iPhone.png");
+  background-size: contain;
+  position: absolute;
+  top: 29px;
+  left: 70px;
+}
+.article__content--secondary::after{
+  border-color: $primaryColor;
+}
+.article__container--small {
+  margin:0;
+  width: 623px;
+  height: 370px;
+  background-color: #FFFFFF;
+  padding: 36px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 5px;
+}
+.article__container--third {
+  max-width: 1124px;
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.square {
+  width: 440px;
+  height: 370px;
+  margin-left: 51px;
+  background-color: $thirdColor;
+  position: relative;
+
+}
+.article__image--trumpet {
+  width: 296px;
+  height: 208px;
+  background-image: url("../assets/Trumpet.png");
+  background-size: contain;
+  position: absolute;
+  top: 91px;
+  left: 62px;
+}
+.article__content--third::after{
+  border-color: $thirdColor;
+}
