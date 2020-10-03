@@ -31,6 +31,7 @@ function css () {
 function watch(cb) {
     gulp.watch("./scss/**/*.scss", gulp.series(css));
     gulp.watch("./*.html").on('change', browserSync.reload);
+    gulp.watch("./js/*.js").on('change', browserSync.reload);
     cb();
 }
 
